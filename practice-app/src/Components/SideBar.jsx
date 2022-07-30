@@ -21,6 +21,17 @@ const SideBar = () => {
         <Grid item xs={12}>
           <Card>
             <CardContent>
+              <Link style={{ textDecoration: "none" }} to="/CalOfFencing">
+                <Button fullWidth className="btn">
+                  Fenching Calcuation
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12}>
+          <Card>
+            <CardContent>
               <Link style={{ textDecoration: "none" }} to="/login">
                 <Button fullWidth className="btn">
                   Login
@@ -35,17 +46,6 @@ const SideBar = () => {
               <Link style={{ textDecoration: "none" }} to="/registration">
                 <Button fullWidth className="btn">
                   Registration
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid item xs={12}>
-          <Card>
-            <CardContent>
-              <Link style={{ textDecoration: "none" }} to="/CalOfFencing">
-                <Button fullWidth className="btn">
-                  Fenching Calcuation
                 </Button>
               </Link>
             </CardContent>
