@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Card, CardContent, Grid } from "@mui/material";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CalOfFencing from "./Components/Geometry/CalOfFencing";
@@ -9,19 +9,28 @@ import User from "./Components/User";
 
 const Landing = () => {
   return (
+    // background:;
     <>
       <BrowserRouter>
-        <Grid container spacing={2}>
-          <Grid item xs={3}>
-            <SideBar />
+        <Grid container spacing={3}>
+          <Grid item xs={2.5}>
+            <Card sx={{ bgcolor: "maroon" }}>
+              <CardContent>
+                <SideBar />
+              </CardContent>
+            </Card>
           </Grid>
           <Grid item xs={9}>
-            <Routes>
-              <Route path="/login" element={<Login />} />
-              <Route path="/user" element={<User />} />
-              <Route path="/registration" element={<Registration />} />
-              <Route path="/CalOfFencing" element={<CalOfFencing />} />
-            </Routes>
+            <Card>
+              <CardContent>
+                <Routes>
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/user" element={<User />} />
+                  <Route path="/registration" element={<Registration />} />
+                  <Route path="/CalOfFencing" element={<CalOfFencing />} />
+                </Routes>
+              </CardContent>
+            </Card>
           </Grid>
         </Grid>
       </BrowserRouter>

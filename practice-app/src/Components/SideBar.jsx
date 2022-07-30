@@ -6,7 +6,7 @@ const SideBar = () => {
   return (
     <>
       {/* <h1>side bar</h1> */}
-      <Grid container>
+      <Grid container spacing={3} sx={{ bgcolor: "maroon" }}>
         <Grid item xs={12}>
           <Card>
             <CardContent>
@@ -45,7 +45,7 @@ const SideBar = () => {
             <CardContent>
               <Link style={{ textDecoration: "none" }} to="/CalOfFencing">
                 <Button fullWidth className="btn">
-                Fenching Calcuation 
+                  Fenching Calcuation
                 </Button>
               </Link>
             </CardContent>

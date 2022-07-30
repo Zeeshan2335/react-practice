@@ -38,8 +38,8 @@ const CalOfFencing = () => {
           <Typography variant="h3">Calculation of Fenching wire</Typography>
         </Grid>
         <Grid item xs={6}>
-          <h1>Length</h1>
           <TextField
+            className="inputs"
             type="number"
             value={Length}
             n
@@ -50,8 +50,8 @@ const CalOfFencing = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <h1>Brath</h1>
           <TextField
+            className="inputs"
             type="number"
             value={Braith}
             variant="outlined"
@@ -61,8 +61,8 @@ const CalOfFencing = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <h1>Layers</h1>
           <TextField
+            className="inputs"
             type="number"
             value={layers}
             variant="outlined"
@@ -72,8 +72,8 @@ const CalOfFencing = () => {
           />
         </Grid>
         <Grid item xs={6}>
-          <h1>Cost of Wire</h1>
           <TextField
+            className="inputs"
             type="number"
             value={cost}
             variant="outlined"
@@ -82,7 +82,6 @@ const CalOfFencing = () => {
             onChange={(e) => setCost(e.target.value)}
           />
         </Grid>
-        <Grid item xs={4}></Grid>
 
         <Grid item xs={3}>
           <Button
@@ -102,7 +101,7 @@ const CalOfFencing = () => {
         <Grid item xs={12}>
           <Card>
             <CardContent>
-              <Typography variant="h5">{num} </Typography>
+              <Typography variant="h3">Rs. {num} </Typography>
             </CardContent>
           </Card>
         </Grid>
