@@ -1,11 +1,13 @@
-import React from 'react';
+import { Grid } from "@mui/material";
+import React from "react";
 
 const Login = () => {
-    return (
-        <div>
-            <h1>this is Login Components</h1>
-        </div>
-    );
+  return (
+    <>
+      <h1 data-aos="fade-right">this is Login Components</h1>
+      <Grid container spacing={2}></Grid>
+    </>
+  );
 };
 
 export default Login;

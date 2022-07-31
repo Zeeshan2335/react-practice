@@ -33,7 +33,7 @@ const CalOfFencing = () => {
 
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} data-aos="flip-right">
         <Grid item xs={12}>
           <Typography variant="h3">Calculation of Fenching wire</Typography>
         </Grid>

@@ -6,7 +6,12 @@ const SideBar = () => {
   return (
     <>
       {/* <h1>side bar</h1> */}
-      <Grid container spacing={3} sx={{ bgcolor: "maroon" }}>
+      <Grid
+        container
+        spacing={3}
+        sx={{ bgcolor: "maroon" }}
+        data-aos="flip-left"
+      >
         <Grid item xs={12}>
           <Card>
             <CardContent>
@@ -21,7 +26,7 @@ const SideBar = () => {
         <Grid item xs={12}>
           <Card>
             <CardContent>
-              <Link style={{ textDecoration: "none" }} to="/CalOfFencing">
+              <Link style={{ textDecoration: "none" }} to="/">
                 <Button fullWidth className="btn">
                   Fenching Calcuation
                 </Button>
@@ -46,6 +51,17 @@ const SideBar = () => {
               <Link style={{ textDecoration: "none" }} to="/registration">
                 <Button fullWidth className="btn">
                   Registration
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12}>
+          <Card>
+            <CardContent>
+              <Link style={{ textDecoration: "none" }} to="/mobile">
+                <Button fullWidth className="btn">
+                  mobile
                 </Button>
               </Link>
             </CardContent>

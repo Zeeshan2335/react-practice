@@ -5,6 +5,7 @@ import CalOfFencing from "./Components/Geometry/CalOfFencing";
 import Login from "./Components/Login";
 import Registration from "./Components/Registration";
 import SideBar from "./Components/SideBar";
+import MobileList from "./Components/todos/mobileList";
 import User from "./Components/User";
 
 const Landing = () => {
@@ -24,10 +25,11 @@ const Landing = () => {
             <Card>
               <CardContent>
                 <Routes>
+                  <Route path="/registration" element={<Registration />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/user" element={<User />} />
-                  <Route path="/registration" element={<Registration />} />
-                  <Route path="/CalOfFencing" element={<CalOfFencing />} />
+                  <Route path="/" element={<CalOfFencing />} />
+                  <Route path="/mobile" element={<MobileList />} />
                 </Routes>
               </CardContent>
             </Card>
