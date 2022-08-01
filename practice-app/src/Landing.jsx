@@ -7,6 +7,7 @@ import Registration from "./Components/Registration";
 import SideBar from "./Components/SideBar";
 import MobileList from "./Components/todos/mobileList";
 import User from "./Components/User";
+import A_Ui_Layer from "./UiDesign/A_Ui_Layer";
 
 const Landing = () => {
   return (
@@ -30,6 +31,7 @@ const Landing = () => {
                   <Route path="/user" element={<User />} />
                   <Route path="/" element={<CalOfFencing />} />
                   <Route path="/mobile" element={<MobileList />} />
+                  <Route path="/auilayer" element={<A_Ui_Layer />} />
                 </Routes>
               </CardContent>
             </Card>

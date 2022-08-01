@@ -67,6 +67,17 @@ const SideBar = () => {
             </CardContent>
           </Card>
         </Grid>
+        <Grid item xs={12}>
+          <Card>
+            <CardContent>
+              <Link style={{ textDecoration: "none" }} to="/auilayer">
+                <Button fullWidth className="btn">
+                  Ui layer 1
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
     </>
   );
