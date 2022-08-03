@@ -5,7 +5,7 @@ import Landing from './Landing';
 // import MobileList from './Components/todos/mobileList';
 // import TaskApi from './Components/TaskApi/TaskApi';
 // import Login from './Components/Login';
-import RoutingComp from './Components/UseNavigateComp/RoutingComp';
+// import RoutingComp from './Components/UseNavigateComp/RoutingComp';
 
 
 function App() {
