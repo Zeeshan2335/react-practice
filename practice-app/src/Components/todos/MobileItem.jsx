@@ -20,7 +20,7 @@ const MobileItem = ({ item, index, handleDelete }) => {
               sx={{ bgcolor: "black", color: "white" }}
               onClick={() => handleDelete(index)}
             >
-              Delete{" "}
+              Delete
             </Button>
           </CardContent>
         </Card>
