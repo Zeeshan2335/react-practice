@@ -6,6 +6,8 @@ import Login from "./Components/Login";
 import Registration from "./Components/Registration";
 import SideBar from "./Components/SideBar";
 import MobileList from "./Components/todos/mobileList";
+import Child from "./Components/UseNavigateComp/Child";
+import MainComp from "./Components/UseNavigateComp/MainComp";
 import User from "./Components/User";
 import A_Ui_Layer from "./UiDesign/A_Ui_Layer";
 
@@ -17,7 +19,7 @@ const Landing = () => {
         <Grid container spacing={3}>
           <Grid item xs={2.5}>
             <Card sx={{ bgcolor: "maroon" }}>
-              <CardContent>
+              <CardContent className="slider">
                 <SideBar />
               </CardContent>
             </Card>
@@ -32,6 +34,8 @@ const Landing = () => {
                   <Route path="/" element={<CalOfFencing />} />
                   <Route path="/mobile" element={<MobileList />} />
                   <Route path="/auilayer" element={<A_Ui_Layer />} />
+                  <Route path="/api" element={<MainComp />} />
+                  <Route path="/child" element={<Child />} />
                 </Routes>
               </CardContent>
             </Card>

@@ -24,26 +24,31 @@ const MainComp = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {/* <h1> Main component </h1>
       <h4>{received.state} </h4>
       <Button variant="contained" onClick={handleRoute1}>
         click to child
       </Button> */}
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ bgcolor: "maroon" }}>
         {product.map((elem) => (
           <>
             <Grid item xs={3}>
               <Card>
                 <CardContent>
-                  <img src={elem.image} alt="" width="200px" height="250px" />
+                  <img
+                    src={elem.image}
+                    alt=""
+                    width="200px"
+                    height="250px"
+                    data-aos="fade-up"
+                  />
                   <h3>
                     {elem.title.substr(0, 25)}
                     {25 < elem.title.length ? "..." : ""}
                   </h3>
                   <Button
                     variant="contained"
-                    color="success"
                     onClick={() => handleRoute1(elem)}
                   >
                     More Details
@@ -54,7 +59,7 @@ const MainComp = () => {
           </>
         ))}
       </Grid>
-    </div>
+    </>
   );
 };
 

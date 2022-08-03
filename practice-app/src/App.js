@@ -11,12 +11,12 @@ import RoutingComp from './Components/UseNavigateComp/RoutingComp';
 function App() {
   return (
     <div className="App">
-      {/* <Landing  /> */}
+      <Landing  />
       {/* <MobileList/> */}
 {/* <User/> */}
 {/* <TaskApi/> */}
 {/* <Login/> */}
-<RoutingComp/>
+{/* <RoutingComp/> */}
     </div>
   );
 }

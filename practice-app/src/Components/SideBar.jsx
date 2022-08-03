@@ -78,6 +78,17 @@ const SideBar = () => {
             </CardContent>
           </Card>
         </Grid>
+        <Grid item xs={12}>
+          <Card>
+            <CardContent>
+              <Link style={{ textDecoration: "none" }} to="/api">
+                <Button fullWidth className="btn">
+                  E Shop
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
     </>
   );

@@ -12,14 +12,19 @@ const Child = () => {
 
     // here the state is used to send the data to route component
     // here we send the txt prop to child component
-    navigation("/", { state: txt });
+    navigation("/api", { state: txt });
   };
   return (
     <>
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <Card>
           <CardContent>
-            <h1> child comp </h1>
+            {/* <h1> child comp </h1> */}
             <Grid container>
               <Grid item xs={5}>
                 <img src={data.image} alt="" width="400px" />

@@ -6,6 +6,8 @@
  }
  .btn{
   color: black !important;
+  margin: 0px !important;
+  padding: 0px !important;
  }
 
  .about {
