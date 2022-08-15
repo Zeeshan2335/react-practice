@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { Provider } from "react-redux";
+import { ConfigStore } from "./State/ConfigStore";
+import reportWebVitals from "./reportWebVitals";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
+const localStore = ConfigStore();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={localStore}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
