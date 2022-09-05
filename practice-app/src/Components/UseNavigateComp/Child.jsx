@@ -26,10 +26,10 @@ const Child = () => {
           <CardContent>
             {/* <h1> child comp </h1> */}
             <Grid container>
-              <Grid item xs={5}>
+              <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
                 <img src={data.image} alt="" width="400px" />
               </Grid>
-              <Grid item xs={5}>
+              <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
                 <h1>{data.title} </h1>
                 <h3>{data.category} </h3>
                 <h2>${data.price} </h2>
