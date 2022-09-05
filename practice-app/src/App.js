@@ -12,11 +12,18 @@ import { ApiFetching } from "./Yasin/ApiFetching";
 // import RoutingComp from './Components/UseNavigateComp/RoutingComp';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CountryDetails } from "./Yasin/CountryDetails";
+import Component1 from "./redux/Component1";
+import Component2 from "./redux/Component2";
+import ProdSetInGodown from "./Components/ProdSetInGodown";
 
 function App() {
   return (
     <div className="App">
-      <Landing />
+      {/* <Landing /> */}
+
+      {/* <Component1 />
+      <Component2 /> */}
+
       {/* <MobileList/> */}
       {/* <User/> */}
       {/* <TaskApi/> */}
@@ -47,6 +54,7 @@ function App() {
           <ApiFetching />
         </Grid>
       </Grid> */}
+      <ProdSetInGodown />
     </div>
   );
 }
