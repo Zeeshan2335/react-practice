@@ -21,7 +21,7 @@ import TryUseReducerHook from "./Components/UseReducer/TryUseReducerHook";
 function App() {
   return (
     <div className="App">
-      {/* <Landing /> */}
+      <Landing />
 
       {/* <Component1 />
       <Component2 /> */}
@@ -58,7 +58,7 @@ function App() {
       </Grid> */}
       {/* <ProdSetInGodown /> */}
       {/* <UseReducer /> */}
-      <TryUseReducerHook />
+      {/* <TryUseReducerHook /> */}
     </div>
   );
 }
