@@ -15,6 +15,8 @@ import { CountryDetails } from "./Yasin/CountryDetails";
 import Component1 from "./redux/Component1";
 import Component2 from "./redux/Component2";
 import ProdSetInGodown from "./Components/ProdSetInGodown";
+import UseReducer from "./Components/UseReducer/UseReducer";
+import TryUseReducerHook from "./Components/UseReducer/TryUseReducerHook";
 
 function App() {
   return (
@@ -54,7 +56,9 @@ function App() {
           <ApiFetching />
         </Grid>
       </Grid> */}
-      <ProdSetInGodown />
+      {/* <ProdSetInGodown /> */}
+      {/* <UseReducer /> */}
+      <TryUseReducerHook />
     </div>
   );
 }
