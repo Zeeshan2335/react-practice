@@ -10,6 +10,7 @@ import Child from "./Components/UseNavigateComp/Child";
 import MainComp from "./Components/UseNavigateComp/MainComp";
 import User from "./Components/User";
 import A_Ui_Layer from "./UiDesign/A_Ui_Layer";
+import Pagination from "./PaginationFunciotn/Pagination";
 
 const Landing = () => {
   return (
@@ -36,6 +37,7 @@ const Landing = () => {
                   <Route path="/auilayer" element={<A_Ui_Layer />} />
                   <Route path="/api" element={<MainComp />} />
                   <Route path="/child" element={<Child />} />
+                  <Route path="/pagination" element={<Pagination />} />
                 </Routes>
               </CardContent>
             </Card>

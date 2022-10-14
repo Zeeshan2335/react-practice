@@ -4,6 +4,7 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Grid,
   TextField,
   Typography,
 } from "@mui/material";
@@ -34,30 +35,35 @@ const HomeComp = () => {
 
   return (
     <div>
-      <h1>Product search by Price</h1>
+      <h1>this is HomeCop</h1>
+      <h3>Product search by Price</h3>
       <TextField onChange={(e) => setSrch(e.target.value)} />
-      {api.map((item) => (
-        <>
-          {/* <h1>{item.price} </h1> */}
-          <Card sx={{ maxWidth: 345 }}>
-            <CardContent>
-              <img src={item.image} alt="" width="200px" />
-              <Typography gutterBottom variant="h5" component="div">
-                {item.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {item.description}
-              </Typography>
-              <Typography gutterBottom variant="h6" component="div">
-                ${item.price}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-        </>
-      ))}
+      <Grid container>
+        {api.map((item) => (
+          <>
+            {/* <h1>{item.price} </h1> */}
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <img src={item.image} alt="" width="200px" />
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.description}
+                  </Typography>
+                  <Typography gutterBottom variant="h6" component="div">
+                    ${item.price}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          </>
+        ))}
+      </Grid>
     </div>
   );
 };

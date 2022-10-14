@@ -1,5 +1,6 @@
 import { Grid, Typography, Box } from "@mui/material";
 import React from "react";
+import HomeComp from "../Component2/HomeComp";
 
 const User = () => {
   return (
@@ -10,11 +11,9 @@ const User = () => {
             <Typography variant="h1"> PICKUPBIZ SOFTWARE </Typography>
           </Box>
         </Grid>
-        {/* <Grid item xs={6}>
-          <Box sx={{ width: "100%", maxWidth: 500 }}>
-            <Typography variant="h1"> Software </Typography>
-          </Box>
-        </Grid> */}
+        <Grid item xs={12}>
+          <HomeComp />
+        </Grid>
       </Grid>
     </>
   );
