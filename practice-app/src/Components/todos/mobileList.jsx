@@ -26,7 +26,9 @@ const MobileList = () => {
   };
   const handleSrch = () => {
     // console.log("handle Searhc");
-    const result = todoCopy.filter((item) => item.includes(srch));
+    const result = todoCopy.filter((item) =>
+      item.toUpperCase().includes(srch.toUpperCase())
+    );
     console.log(result);
     setTodo(result);
   };
